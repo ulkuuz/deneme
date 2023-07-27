@@ -14,6 +14,12 @@ namespace SilahIslemleriYonetici.Controllers
         [HttpPost]
         public JsonResult DuyuruGetir(int id)
         {
+
+            // test 
+            // tesasdasd
+            // AddDaysasd
+            // Asayisda
+            // s
             var duyuru = ProxyHelper.ExecuteCall<ILoginService, ServiceResult<DuyuruModelDto>>(s => s.GetirDuruyu(id)).Result;
             return Json(duyuru, JsonRequestBehavior.AllowGet);
         }

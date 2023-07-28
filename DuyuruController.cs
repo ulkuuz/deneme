@@ -24,6 +24,8 @@ namespace SilahIslemleriYonetici.Controllers
 			
 			//deneme3
 			//nfdknvlsdfnvkln
+			
+			//deneme 4  vfjkvjvka
             var duyuru = ProxyHelper.ExecuteCall<ILoginService, ServiceResult<DuyuruModelDto>>(s => s.GetirDuruyu(id)).Result;
             return Json(duyuru, JsonRequestBehavior.AllowGet);
         }

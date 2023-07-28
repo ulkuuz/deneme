@@ -20,6 +20,10 @@ namespace SilahIslemleriYonetici.Controllers
             // AddDaysasd
             // Asayisda
             // s
+			
+			
+			//deneme3
+			//nfdknvlsdfnvkln
             var duyuru = ProxyHelper.ExecuteCall<ILoginService, ServiceResult<DuyuruModelDto>>(s => s.GetirDuruyu(id)).Result;
             return Json(duyuru, JsonRequestBehavior.AllowGet);
         }
